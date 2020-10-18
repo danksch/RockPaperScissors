@@ -1,4 +1,4 @@
-open abstract class Player {
+abstract class Player(open val name: String) {
     var wins: Int = 0
     var draws: Int = 0
     var losses: Int = 0
