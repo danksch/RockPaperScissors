@@ -1,3 +1,5 @@
+package RockPaperScissors
+
 abstract class Player(open val name: String) {
     var numOfWins: Int = 0
     var numOfDraws: Int = 0

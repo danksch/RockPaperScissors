@@ -1,3 +1,5 @@
+import RockPaperScissors.Action
+import RockPaperScissors.Result
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

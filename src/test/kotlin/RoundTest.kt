@@ -1,3 +1,7 @@
+import RockPaperScissors.Action
+import RockPaperScissors.RegularPlayer
+import RockPaperScissors.RockPlayer
+import RockPaperScissors.Round
 import io.mockk.every
 import io.mockk.spyk
 import org.junit.Assert.assertEquals
@@ -11,7 +15,7 @@ class RoundTest {
         val playerTwo = RockPlayer()
         val round = Round(playerOne, playerTwo)
         round.start()
-        assertEquals(round.resultMessage, "Regular Player wins!")
+        assertEquals(round.resultMessage, "Regular RockPaperScissors.Player wins!")
     }
 
     @Test
@@ -20,6 +24,6 @@ class RoundTest {
         val playerTwo = RockPlayer()
         val round = Round(playerOne, playerTwo)
         round.start()
-        assertEquals(round.resultMessage, "Round ended in a draw!")
+        assertEquals(round.resultMessage, "RockPaperScissors.Round ended in a draw!")
     }
 }

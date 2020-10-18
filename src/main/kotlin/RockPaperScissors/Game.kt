@@ -1,3 +1,5 @@
+package RockPaperScissors
+
 class Game(
     private val numOfRounds: Int,
     private val playerOne: Player = RegularPlayer(),

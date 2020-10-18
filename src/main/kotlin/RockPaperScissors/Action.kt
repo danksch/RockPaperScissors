@@ -1,3 +1,5 @@
+package RockPaperScissors
+
 enum class Action {
     ROCK {
         override fun fights(other: Action) =

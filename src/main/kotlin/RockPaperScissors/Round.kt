@@ -1,3 +1,5 @@
+package RockPaperScissors
+
 class Round(
     private val playerOne: Player,
     private val playerTwo: Player,
@@ -20,7 +22,7 @@ class Round(
     private fun buildResultMessage(playerOneResult: Result): String =
         when (playerOneResult) {
             Result.WIN -> "${playerOne.name} wins!"
-            Result.DRAW -> "Round ended in a draw!"
+            Result.DRAW -> "RockPaperScissors.Round ended in a draw!"
             Result.LOSS -> "${playerTwo.name} wins!"
         }
 }
