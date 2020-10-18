@@ -16,7 +16,7 @@ class ActionTest {
 
     @Test
     fun rockFightingScissor_resultsInWin() {
-        assertEquals(Action.ROCK.fights(Action.SCISSOR), Result.WIN)
+        assertEquals(Action.ROCK.fights(Action.SCISSORS), Result.WIN)
     }
 
     @Test
@@ -31,21 +31,21 @@ class ActionTest {
 
     @Test
     fun paperFightsScissor_resultsInWin() {
-        assertEquals(Action.PAPER.fights(Action.SCISSOR), Result.LOSS)
+        assertEquals(Action.PAPER.fights(Action.SCISSORS), Result.LOSS)
     }
 
     @Test
     fun scissorFightsRock_resultsInLoss() {
-        assertEquals(Action.SCISSOR.fights(Action.ROCK), Result.LOSS)
+        assertEquals(Action.SCISSORS.fights(Action.ROCK), Result.LOSS)
     }
 
     @Test
     fun scissorFightsPaper_resultsInWin() {
-        assertEquals(Action.SCISSOR.fights(Action.PAPER), Result.WIN)
+        assertEquals(Action.SCISSORS.fights(Action.PAPER), Result.WIN)
     }
 
     @Test
     fun scissorFightsScissor_resultsInDraw() {
-        assertEquals(Action.SCISSOR.fights(Action.SCISSOR), Result.DRAW)
+        assertEquals(Action.SCISSORS.fights(Action.SCISSORS), Result.DRAW)
     }
 }

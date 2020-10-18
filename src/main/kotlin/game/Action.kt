@@ -6,7 +6,7 @@ enum class Action {
             when (other) {
                 ROCK -> Result.DRAW
                 PAPER -> Result.LOSS
-                SCISSOR -> Result.WIN
+                SCISSORS -> Result.WIN
             }
     },
     PAPER {
@@ -14,15 +14,15 @@ enum class Action {
             when (other) {
                 ROCK -> Result.WIN
                 PAPER -> Result.DRAW
-                SCISSOR -> Result.LOSS
+                SCISSORS -> Result.LOSS
             }
     },
-    SCISSOR {
+    SCISSORS {
         override fun fights(other: Action) =
             when (other) {
                 ROCK -> Result.LOSS
                 PAPER -> Result.WIN
-                SCISSOR -> Result.DRAW
+                SCISSORS -> Result.DRAW
             }
     };
 
