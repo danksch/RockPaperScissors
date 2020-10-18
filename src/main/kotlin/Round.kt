@@ -1,4 +1,8 @@
-class Round(private val playerOne: Player, private val playerTwo: Player) {
+class Round(
+    private val playerOne: Player,
+    private val playerTwo: Player,
+    private val printRoundResult: Boolean = false
+) {
     var resultMessage: String = ""
 
     fun start() {
@@ -8,6 +12,9 @@ class Round(private val playerOne: Player, private val playerTwo: Player) {
         resultMessage = createResultMessage(result)
         playerOne.evaluateResult(result)
         playerTwo.evaluateResult(playerTwoAction.fights(playerOneAction))
+        if (printRoundResult) {
+            println("$playerOneAction vs. $playerTwoAction: $resultMessage")
+        }
     }
 
     private fun createResultMessage(playerOneResult: Result): String =

@@ -14,6 +14,7 @@ class RoundTest {
         round.start()
         assertEquals(round.resultMessage, "Regular Player wins!")
     }
+
     @Test
     fun roundStart_determinesDrawCorrectly() {
         val playerOne = RockPlayer()
