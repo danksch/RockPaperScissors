@@ -1,4 +1,4 @@
-package RockPaperScissors
+package game
 
 enum class Action {
     ROCK {

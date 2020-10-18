@@ -1,5 +1,5 @@
-import RockPaperScissors.Action
-import RockPaperScissors.Result
+import game.Action
+import game.Result
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

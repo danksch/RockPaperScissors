@@ -1,7 +1,7 @@
-import RockPaperScissors.Action
-import RockPaperScissors.RegularPlayer
-import RockPaperScissors.Result
-import RockPaperScissors.RockPlayer
+import game.Action
+import game.RegularPlayer
+import game.Result
+import game.RockPlayer
 import org.junit.Test
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue

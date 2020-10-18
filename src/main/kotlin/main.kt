@@ -1,4 +1,4 @@
-import RockPaperScissors.Game
+import game.Game
 
 fun main() {
     val game = Game(100)

@@ -1,4 +1,4 @@
-package RockPaperScissors
+package game
 
 class Game(
     private val numOfRounds: Int,
