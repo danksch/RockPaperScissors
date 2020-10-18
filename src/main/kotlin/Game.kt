@@ -26,5 +26,5 @@ class Game(
     }
 
     private fun buildPlayerResultMessage(player: Player): String =
-        "Results for ${player.name}: WINS: ${player.wins}, LOSSES: ${player.losses}, DRAWS: ${player.draws}"
+        "Results for ${player.name}: WINS: ${player.numOfWins}, LOSSES: ${player.numOfLosses}, DRAWS: ${player.numOfDraws}"
 }

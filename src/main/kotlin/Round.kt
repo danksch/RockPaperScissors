@@ -9,7 +9,7 @@ class Round(
         val playerOneAction = playerOne.act()
         val playerTwoAction = playerTwo.act()
         val result = playerOneAction.fights(playerTwoAction)
-        resultMessage = createResultMessage(result)
+        resultMessage = buildResultMessage(result)
         playerOne.evaluateResult(result)
         playerTwo.evaluateResult(playerTwoAction.fights(playerOneAction))
         if (printRoundResult) {
@@ -17,7 +17,7 @@ class Round(
         }
     }
 
-    private fun createResultMessage(playerOneResult: Result): String =
+    private fun buildResultMessage(playerOneResult: Result): String =
         when (playerOneResult) {
             Result.WIN -> "${playerOne.name} wins!"
             Result.DRAW -> "Round ended in a draw!"

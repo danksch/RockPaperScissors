@@ -5,7 +5,7 @@ import org.junit.Test
 
 class RoundTest {
     @Test
-    fun roundStart_determinesWinnerCorrectly() {
+    fun whenRoundEnds_withWin_resultMessageIsBuiltCorrectly() {
         val playerOne = spyk<RegularPlayer>()
         every { playerOne.act() } returns Action.PAPER
         val playerTwo = RockPlayer()
@@ -15,7 +15,7 @@ class RoundTest {
     }
 
     @Test
-    fun roundStart_determinesDrawCorrectly() {
+    fun whenRoundEnds_withDraw_resultMessageIsBuiltCorrectly() {
         val playerOne = RockPlayer()
         val playerTwo = RockPlayer()
         val round = Round(playerOne, playerTwo)
