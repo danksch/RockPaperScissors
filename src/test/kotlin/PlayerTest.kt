@@ -28,7 +28,7 @@ class PlayerTest {
     }
 
     @Test
-    fun regularPlayer_whenPlaying_actsRandomly() {
+    fun regularPlayer_whenPlaying_actsWithOneOfTheActions() {
         val player = RegularPlayer()
         val action = player.act()
         assertTrue(action in Action.values())
