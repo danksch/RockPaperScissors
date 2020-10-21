@@ -6,9 +6,9 @@ class Game(
     private val playerTwo: Player = RockPlayer(),
     private val printRoundResult: Boolean = false
 ) {
-    var numOfCompletedRounds = 0
-    var playerOneResultMessage = ""
-    var playerTwoResultMessage = ""
+    var numOfCompletedRounds: Int = 0
+    var playerOneResultMessage: String = ""
+    var playerTwoResultMessage: String = ""
 
     fun start() {
         println("Starting Rock, Paper and Scissors ($numOfRounds rounds)...")
